@@ -1,0 +1,16 @@
+/*
+FLEXBOX [P03: Portfolio Project]
+By: Calista Alex
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+}
+
+.container .item {
+	flex: auto;
+}
