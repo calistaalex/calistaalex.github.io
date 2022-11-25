@@ -82,6 +82,26 @@ code {
 	line-height: 120%;
 }
 
+img.title {
+	max-width: 75%;
+	border: none;
+}
+
+.figma-cursor {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	animation: 50s hovering infinite;
+	animation-duration: 20s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	animation-name: hovering;
+}
+
 header.scroll-up {
 	transform: translateY(0);
 }
