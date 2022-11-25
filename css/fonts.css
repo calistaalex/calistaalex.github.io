@@ -3,11 +3,72 @@ FONTS [P03: Portfolio Project]
 By: Calista Alex
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @font-face {
 	font-family: 'Queen Marker';
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/queen-marker.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 100;
+	font-style: normal;
+	src: url('../fonts/sf-ui-ultralight.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 200;
+	font-style: normal;
+	src: url('../fonts/sf-ui-thin.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../fonts/sf-ui-light.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/sf-ui-regular.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 500;
+	font-style: normal;
+	src: url('../fonts/sf-ui-medium.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 600;
+	font-style: normal;
+	src: url('../fonts/sf-ui-semibold.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../fonts/sf-ui-bold.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 800;
+	font-style: normal;
+	src: url('../fonts/sf-ui-heavy.otf');
+}
+
+@font-face {
+	font-family: 'SF UI';
+	font-weight: 900;
+	font-style: normal;
+	src: url('../fonts/sf-ui-black.otf');
 }
