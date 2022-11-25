@@ -3,11 +3,27 @@ FONTS [P03: Portfolio Project]
 By: Calista Alex
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 @font-face {
 	font-family: 'Queen Marker';
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/queen-marker.otf');
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/cerapro-regular.otf');
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../fonts/cerapro-bold.otf');
 }
 
 @font-face {

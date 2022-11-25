@@ -4,17 +4,17 @@ By: Calista Alex
 */
 
 :root {
-	--primary: #DC0024;
-	--text: #0E1111;
+	--primary: #0100FE;
+	--text: #1F1F1F;
 	--gray: #A4A4A4;
 	--lightgray: #EEE;
 }
 
 body {
-	background-color: #FFF;
 	font-family: 'SF UI', sans-serif;
 	font-size: 18px;
 	line-height: 100%;
+	background-color: #FFF;
 }
 
 main {
@@ -24,6 +24,45 @@ main {
 
 .element {
 	margin: 50px 0px 50px 0px;
+}
+
+.introduction {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.introduction h1 {
+	display: inline;
+	color: var(--text);
+	font-family: 'Libre Baskerville', serif;
+	font-size: 48px;
+	font-style: italic;
+}
+
+.introduction h2 {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+a.squiggly {
+  background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a.squiggly:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%230100FE' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 10px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 
 .title {
@@ -87,21 +126,6 @@ img.title {
 	border: none;
 }
 
-.figma-cursor {
-	position: absolute;
-	right: 5%;
-	top: 50%;
-	animation: 50s hovering infinite;
-	animation-duration: 20s;
-	animation-timing-function: ease;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: none;
-	animation-play-state: running;
-	animation-name: hovering;
-}
-
 header.scroll-up {
 	transform: translateY(0);
 }
@@ -152,16 +176,16 @@ a:hover, a:focus {
 
 a.navigation {
 	color: var(--text);
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: 700;
-	text-transform: uppercase;
 	text-decoration: none;
-	transition-property: color;
+	transition-property: color, font-style;
 	transition-duration: 0.25s;
 }
 
 a.navigation:hover, a.navigation:focus {
 	color: var(--primary);
+	font-style: italic;
 	text-decoration: none;
 }
 
@@ -183,17 +207,17 @@ a.navigation-button:hover, a.navigation-button:focus {
 a.cta-button {
 	color: #FFF;
 	background-color: var(--text);
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: 700;
-	text-transform: uppercase;
 	text-decoration: none;
 	padding: 0.75em 1em 0.75em 1em;
-	transition-property: background-color;
+	transition-property: background-color, font-style;
 	transition-duration: 0.25s;
 }
 
 a.cta-button:hover, a.cta-button:focus {
 	background-color: var(--primary);
+	font-style: italic;
 }
 
 .button {
