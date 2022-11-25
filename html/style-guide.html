@@ -47,7 +47,36 @@
         <h4>Sample Code:</h4>
         <code>&lt;a class="navigation" href="#"&gt;Default Link&lt;/a&gt;</code>
         <h4>Rendered Element:</h4>
-        <a class="navigation-button" href="#">Default Link</a>
+        <button class="button" href="#">Default Link</button>
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS Selector:</h4>
+        <p>button, [type="submit"]</p>
+        <p>button, [type="reset"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;button type="submit" value="Submit">Submit&lt;/button&gt;</code>
+        <code>&lt;button type="reset" value="Reset">Reset&lt;/button&gt;</code>
+        <h4>Rendered Element:</h4>
+        <button class="button" type="submit" value="Submit">Submit</button>
+        <button class="button" type="reset" value="Reset">Reset</button>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>input, [type="text"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;label for="input-field">Label:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="input-field"&gt;</code>
+        <h4>Rendered Element:</h4>
+        <form>
+          <div class="text-input">
+            <input class="floating-field" type="text" required> <span class="highlight"></span>
+            <span class="bar"></span> <label class="floating-label">Name</label>
+          </div>
+        </form>
       </section>
 
     </section>

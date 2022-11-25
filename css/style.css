@@ -138,7 +138,6 @@ a.navigation-button {
 	background-color: var(--text);
 	font-size: 18px;
 	font-weight: 700;
-
 	text-decoration: none;
 	padding: 0.75em 1em 0.75em 1em;
 	transition-property: background-color;
@@ -165,6 +164,22 @@ a.cta-button:hover, a.cta-button:focus {
 	background-color: var(--primary);
 }
 
+.button {
+	color: #FFF;
+	background-color: var(--text);
+	border-style: hidden;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.75em 1em 0.75em 1em;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+}
+
+.button:hover, .button:focus {
+	background-color: var(--primary);
+}
+
 a.in-text {
 	font-size: 18px;
 	font-weight: 700;
@@ -185,4 +200,73 @@ a.in-text:focus {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
+}
+
+.text-input {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+input.floating-field {
+  display: flex;
+	width: 300px;
+	background-color: transparent;
+	border: none;
+  border-bottom: 2.5px solid var(--text);
+  padding: 10px 5px 10px 5px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+input.floating-field:focus {
+  outline: none;
+}
+
+label.floating-label {
+  position: absolute;
+  top: 10px;
+	left: 5px;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 400;
+  pointer-events: none;
+  transition: 0.25s ease all;
+}
+
+input.floating-field:hover ~ label.floating-label, input.floating-field:valid ~ label.floating-label {
+  top: -15px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+input.floating-field:focus ~ label.floating-label, input.floating-field:valid ~ label.floating-label {
+  top: -15px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before {
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  height: 5px;
+  width: 0;
+  background: var(--primary);
+  transition: 0.25s ease all;
+}
+
+.bar:before {
+  left: 0%;
+  border-bottom: 2.5px solid var(--text);
+}
+
+input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:after {
+  width: 100%;
 }
