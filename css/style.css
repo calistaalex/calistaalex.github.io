@@ -7,6 +7,7 @@ By: Calista Alex
 	--primary: #DC0024;
 	--text: #0E1111;
 	--gray: #A4A4A4;
+	--lightgray: #EEE;
 }
 
 body {
@@ -36,23 +37,33 @@ main {
 	margin-bottom: 100px;
 }
 
+h1 {
+	color: var(--primary);
+	font-size: 42px;
+	font-weight: 700;
+}
+
 h2 {
 	color: var(--primary);
 	font-size: 32px;
 	font-weight: 700;
-	margin-top: 100px;
-	margin-bottom: 50px;
 }
 
 h3 {
 	color: var(--text);
 	font-size: 21px;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-weight: 700;
 }
 
 h4 {
+	color: var(--text);
 	font-size: 18px;
+	font-weight: 700;
+}
+
+h5 {
+	color: var(--text);
+	font-size: 14px;
 	font-weight: 700;
 }
 
@@ -120,7 +131,7 @@ a:hover, a:focus {
 
 a.navigation {
 	color: var(--text);
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -151,7 +162,7 @@ a.navigation-button:hover, a.navigation-button:focus {
 a.cta-button {
 	color: #FFF;
 	background-color: var(--text);
-	font-size: 21px;
+	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -200,6 +211,17 @@ a.in-text:focus {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 2.5px solid var(--text);
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .text-input {
@@ -253,20 +275,103 @@ input.floating-field:focus ~ label.floating-label, input.floating-field:valid ~ 
 }
 
 .bar:before {
+	content: "";
   position: absolute;
-  bottom: 0px;
-  content: "";
-  height: 5px;
+	left: 0%;
+  bottom: 0%;
   width: 0;
+	height: 5px;
   background: var(--primary);
+	border-bottom: 2.5px solid var(--text);
   transition: 0.25s ease all;
-}
-
-.bar:before {
-  left: 0%;
-  border-bottom: 2.5px solid var(--text);
 }
 
 input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:after {
   width: 100%;
+}
+
+.select-field {
+  position: relative;
+  border: 2.5px solid var(--text);
+}
+
+.select-field select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #FFF;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 25px;
+  border: 10px solid transparent;
+  border-color: var(--primary) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  position: absolute;
+  border-color: transparent transparent var(--primary) transparent;
+  top: 12.5px;
+}
+
+.select-items div, .select-selected {
+	padding: 1.25rem 1.25rem;
+  color: var(--text);
+  outline: 2,5px solid var(--text);
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  outline: 2.5px solid var(--text);
+  background-color: #FFF;
+  top: 105%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover {
+  background-color: var(--lightgray);
+  transition: 0.25s all linear;
+}
+
+.same-as-selected {
+  background: var(--primary);
+  transition: 0.25s all linear;
+}
+
+label.radio-button {
+  line-height: 140%;
+}
+
+input.radio-button {
+  position: relative;
+  top: 2px;
+	width: 15px;
+  height: 15px;
+	margin-right: 5px;
+  appearance: none;
+  border-radius: 50%;
+	border: 2.5px solid var(--text);
+  transition: 0.25s all linear;
+}
+
+input.radio-button:hover {
+  border: 3px solid var(--text);
+  transition: 0.25s all linear;
+}
+
+input.radio-button:checked {
+  background: var(--primary);
+  border: 3px solid var(--text);
+  transition: 0.25s all linear;
 }

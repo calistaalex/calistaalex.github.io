@@ -64,12 +64,12 @@
       </section>
 
       <section class="element">
-        <h3>Text Input Field with Label</h3>
+        <h3>Text Input Field With Label</h3>
         <h4>CSS Selector:</h4>
         <p>input, [type="text"]</p>
         <h4>Sample Code:</h4>
-        <code>&lt;label for="input-field">Label:&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="input-field"&gt;</code>
+        <code>&lt;label for="text-field">Label:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="text-field"&gt;</code>
         <h4>Rendered Element:</h4>
         <form>
           <div class="text-input">
@@ -77,6 +77,47 @@
             <span class="bar"></span> <label class="floating-label">Name</label>
           </div>
         </form>
+      </section>
+
+      <section class="element">
+        <h3>Multi-Line Text Input Field</h3>
+        <h4>CSS Selector:</h4>
+        <p>textarea</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;textarea&gt;&lt;/textarea&gt;</code>
+        <h4>Rendered Element:</h4>
+        <textarea rows="5"></textarea>
+      </section>
+
+      <section class="element">
+        <h3>Select Input Field</h3>
+        <h4>CSS Selector:</h4>
+        <p>select-field</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;div class="select-field"&gt;&lt;/div&gt;</code>
+        <h4>Rendered Element:</h4>
+        <div class="select-field" style="width:auto;">
+          <select>
+            <option value="0">Selection:</option>
+            <option value="1">Selection 1</option>
+            <option value="2">Selection 2</option>
+            <option value="3">Selection 3</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button With Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>input, [type="radio"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-1" value="Button 1"/&gt;Radio Button 1&lt;/label&gt;</code>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-2" value="Button 2"/&gt;Radio Button 2&lt;/label&gt;</code>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-3" value="Button 3"/&gt;Radio Button 3&lt;/label&gt;</code>
+        <h4>Rendered Element:</h4>
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-1">Selection 1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-2">Selection 2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-3">Selection 3</label>
       </section>
 
     </section>
@@ -95,9 +136,9 @@
         <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
         <h4>Rendered Element:</h4>
         <h2>Heading 1</h2>
-        <h4>Heading 2</h4>
-        <h5>Heading 3</h5>
-        <h6>Heading 4</h6>
+        <h3>Heading 2</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 4</h5>
       </section>
 
       <section class="element">
