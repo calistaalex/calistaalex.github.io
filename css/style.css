@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-	color: var(--text);
+	color: var(--primary);
 	font-size: 21px;
 	font-weight: 700;
 }
@@ -73,12 +73,13 @@ p {
 }
 
 code {
+	display: block;
+	padding: 12.5px;
+	background-color: #EEE;
 	color: var(--text);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
-  background-color: #EEE;
-  display: block;
-  padding: 12.5px;
+	line-height: 120%;
 }
 
 header.scroll-up {
@@ -355,7 +356,7 @@ label.radio-button {
 
 input.radio-button {
   position: relative;
-  top: 2px;
+  top: 1.5px;
 	width: 15px;
   height: 15px;
 	margin-right: 5px;
