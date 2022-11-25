@@ -6,12 +6,14 @@ By: Calista Alex
 :root {
 	--primary: #DC0024;
 	--text: #0E1111;
+	--gray: #A4A4A4;
 }
 
 body {
 	background-color: #FFF;
 	font-family: 'SF UI', sans-serif;
-	font-size: 115%;
+	font-size: 18px;
+	line-height: 100%;
 }
 
 main {
@@ -25,19 +27,21 @@ main {
 
 .title {
 	color: var(--text);
-	font-size: 72px;
+	font-size: 64px;
 	font-weight: 700;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 	background-color: #FFF;
 	border-bottom: 5px solid var(--text);
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 h2 {
 	color: var(--primary);
 	font-size: 32px;
 	font-weight: 700;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -47,10 +51,23 @@ h3 {
 	text-transform: uppercase;
 }
 
+h4 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
 code {
+	color: var(--text);
+	font-size: 18px;
+	font-weight: 400;
   background-color: #EEE;
   display: block;
-  padding: 15px;
+  padding: 12.5px;
 }
 
 header.scroll-up {
@@ -103,7 +120,7 @@ a:hover, a:focus {
 
 a.navigation {
 	color: var(--text);
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -116,10 +133,26 @@ a.navigation:hover, a.navigation:focus {
 	text-decoration: none;
 }
 
-a.cta-button {
+a.navigation-button {
 	color: #FFF;
 	background-color: var(--text);
 	font-size: 18px;
+	font-weight: 700;
+
+	text-decoration: none;
+	padding: 0.75em 1em 0.75em 1em;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+}
+
+a.navigation-button:hover, a.navigation-button:focus {
+	background-color: var(--primary);
+}
+
+a.cta-button {
+	color: #FFF;
+	background-color: var(--text);
+	font-size: 21px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -130,4 +163,26 @@ a.cta-button {
 
 a.cta-button:hover, a.cta-button:focus {
 	background-color: var(--primary);
+}
+
+a.in-text {
+	font-size: 18px;
+	font-weight: 700;
+  background: linear-gradient(to right, var(--gray), var(--gray)), linear-gradient(to right, var(--primary), var(--primary));
+  background-size: 100% 10px, 0 10px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a.in-text:hover {
+  background-size: 0 10px, 100% 10px;
+}
+
+a.in-text:focus {
+  background: linear-gradient(to right, var(--primary), var(--primary)), linear-gradient(to right, var(--primary), var(--primary));
+  background-size: 100% 10px, 0 10px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
