@@ -602,7 +602,7 @@ input.radio-button:checked {
   position: sticky;
   margin: 0 auto;
   height: 80vh;
-  bottom: 10vh;
+  bottom: 0vh;
 }
 
 .work-container img {
@@ -640,13 +640,14 @@ footer {
 .footer-container h1 {
 	font-family: "SF UI", sans-serif;
 	font-style: normal;
-	font-size: 185%;
+	font-size: 180%;
 	color: var(--text);
 	padding-bottom: 10px;
 	border-bottom: 2.5px solid var(--text);
 }
 
 .footer-container h2 {
+	font-family: "Cera Pro", sans-serif;
 	font-size: 160%;
 	color: var(--text);
 }
@@ -654,10 +655,10 @@ footer {
 .footer-container h3 {
 	font-family: "Libre Baskerville", sans-serif;
 	font-style: italic;
-	font-size: 160%;
-	color: var(--primary);
-	padding-bottom: 10px;
-	border-bottom: 2.5px solid var(--text);
+	font-size: 140%;
+	/* color: var(--primary); */
+	/* padding-bottom: 10px;
+	border-bottom: 2.5px solid var(--text); */
 }
 
 .footer-container p {
