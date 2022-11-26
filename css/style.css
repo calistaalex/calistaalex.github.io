@@ -13,7 +13,7 @@ By: Calista Alex
 body {
 	font-family: 'SF UI', sans-serif;
 	font-size: 18px;
-	line-height: 100%;
+	line-height: 120%;
 	background-color: #FFF;
 }
 
@@ -37,6 +37,7 @@ main {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 48px;
 	font-style: italic;
+	line-height: 140%;
 }
 
 .introduction h2 {
@@ -46,6 +47,24 @@ main {
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 140%;
+}
+
+.details {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.details h3 {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h3.identity {
+	display: inline;
+	font-family: 'Cera Pro', sans-serif;
 }
 
 a.squiggly {
@@ -58,6 +77,7 @@ a.squiggly {
 }
 
 a.squiggly:hover {
+	color: var(--primary);
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%230100FE' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 10px;
@@ -184,6 +204,21 @@ a.navigation {
 }
 
 a.navigation:hover, a.navigation:focus {
+	color: var(--primary);
+	font-style: italic;
+	text-decoration: none;
+}
+
+a.email {
+	color: var(--text);
+	font-size: 27px;
+	font-weight: 700;
+	text-decoration: none;
+	transition-property: color, font-style;
+	transition-duration: 0.25s;
+}
+
+a.email:hover, a.email:focus {
 	color: var(--primary);
 	font-style: italic;
 	text-decoration: none;
