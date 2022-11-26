@@ -106,7 +106,7 @@ h2.strategy {
 	display: inline;
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
-	font-size: 200%;
+	font-size: 175%;
 	font-weight: 400;
 	line-height: 140%;
 }
@@ -663,7 +663,7 @@ footer {
 }
 
 .footer-container a {
-	display: block;
+	display: inline;
 	color: var(--text);
 	font-size: 120%;
 	font-weight: 700;
