@@ -6,8 +6,9 @@ By: Calista Alex
 :root {
 	--primary: #0100FE;
 	--text: #1F1F1F;
-	--gray: #A4A4A4;
-	--lightgray: #EEE;
+	--secondary-dark: #A4A4A4;
+	--secondary-light: #EEEEEE;
+	--background: #FEFEFE;
 }
 
 html {
@@ -24,6 +25,7 @@ body {
 main {
 	margin-top: 100px;
   padding: 100px;
+	background-color: #FEFEFE;
 }
 
 .element {
@@ -347,7 +349,7 @@ a.cta-button:hover, a.cta-button:focus {
 a.in-text {
 	font-size: 110%;
 	font-weight: 700;
-  background: linear-gradient(to right, var(--gray), var(--gray)), linear-gradient(to right, var(--primary), var(--primary));
+  background: linear-gradient(to right, var(--secondary-dark), var(--secondary-dark)), linear-gradient(to right, var(--primary), var(--primary));
   background-size: 100% 10px, 0 10px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -493,7 +495,7 @@ input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:afte
 }
 
 .select-items div:hover {
-  background-color: var(--lightgray);
+  background-color: var(--secondary-light);
   transition: 0.25s all linear;
 }
 
