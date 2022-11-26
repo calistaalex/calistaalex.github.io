@@ -13,12 +13,12 @@ By: Calista Alex
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
 	font-family: 'SF UI', sans-serif;
 	font-size: 100%;
-	line-height: 120%;
 	background-color: #FFF;
 }
 
@@ -33,9 +33,9 @@ main {
 	padding-bottom: 150px;
 }
 
-.element {
+/* .element {
 	margin: 50px 0px 50px 0px;
-}
+} */
 
 .introduction {
 	margin-top: 100px;
@@ -587,15 +587,15 @@ input.radio-button:checked {
 @-o-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
+.sticky-bound {
+	position: relative;
+}
+
 .work-content {
   margin: 0 auto;
   width: 80vw;
   max-width: 80vw;
   padding-top: 20vh;
-}
-
-.sticky-bound {
-  position: relative;
 }
 
 .work-container {
@@ -610,4 +610,23 @@ input.radio-button:checked {
   width: auto;
   height: 80%;
   margin: 0 auto;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #030303;
+  height: auto;
+  width: 100vw;
+  padding: 100px;
+  color: #E0F600;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
