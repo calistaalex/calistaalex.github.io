@@ -54,17 +54,18 @@ main {
 	margin-bottom: 50px;
 }
 
-.details h3 {
-	width: 50%;
-	float: left;
+.availability-text h3 {
+	position: relative;
+	top: -10px;
+	left: 10px;
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
-	font-size: 55%;
+	font-size: 65%;
 	font-weight: 400;
+	line-height: 120%;
 }
 
 .availability, .availability::before {
-	display: inline-block;
 	float: left;
 	content: " ";
 	width: 15px;
@@ -75,7 +76,6 @@ main {
 }
 
 .availability::before {
-	position: absolute;
 	background-color: var(--primary);
 	animation: blinking 1.5s infinite;
 }
