@@ -58,6 +58,44 @@ main {
 	margin-bottom: 100px;
 }
 
+.work-list {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.work-name h2 {
+	display: inline;
+	color: var(--text);
+	font-family: 'Cera Pro', sans-serif;
+	font-size: 280%;
+	font-weight: 700;
+	line-height: 140%;
+}
+
+.work-name a {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 280%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.work-client {
+	position: relative;
+	top: -50px;
+	float: right;
+}
+
+.work-client h3 {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 200%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
 .availability-text h3 {
 	position: relative;
 	top: -10px;
