@@ -123,46 +123,45 @@ jQuery(document).ready(function($){
 const images = [
   '../img/art-curator/overview.jpg',
   '../img/lpm-microsite/overview.jpg',
-  '../img/lpm-print/overview.jpg',
-]
+  '../img/lpm-print/overview.jpg'
+];
 
 const random = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
+};
 
 window.addEventListener('load', () => {
-  const content = document.querySelector('.work')
-  let main = null
+  const content = document.querySelector('.work-content');
+  let main = null;
 
   images.forEach((url, index) => {
-    const stickyBound = document.createElement('div')
-    stickyBound.className = 'sticky-bound'
+    const stickyBound = document.createElement('div');
+    stickyBound.className = 'sticky-bound';
 
-    const posterContainer = document.createElement('section')
-    posterContainer.className= 'work-container'
-    posterContainer.style.zIndex = 100 - index
-    posterContainer.style.marginLeft = `${random(-10, 10)}vh`
-    posterContainer.style.transform = `rotate(${random(-10, 10)}deg)`
+    const posterContainer = document.createElement('section');
+    posterContainer.className = 'work-container';
+    posterContainer.style.zIndex = 100 - index;
+    posterContainer.style.marginLeft = `${random(-5, 5)}vh`;
+    posterContainer.style.transform = `rotate(${random(-10, 10)}deg)`;
 
-    const image = document.createElement('img')
-    image.src = url
+    const image = document.createElement('img');
+    image.src = url;
 
-    if(!main) {
-      posterContainer.appendChild(image)
-      stickyBound.appendChild(posterContainer)
+    if (!main) {
+      posterContainer.appendChild(image);
+      stickyBound.appendChild(posterContainer);
 
-      main = stickyBound
+      main = stickyBound;
     } else {
-      posterContainer.appendChild(image)
-      stickyBound.appendChild(main)
-      stickyBound.appendChild(posterContainer)
+      posterContainer.appendChild(image);
+      stickyBound.appendChild(main);
+      stickyBound.appendChild(posterContainer);
 
-      main = stickyBound
+      main = stickyBound;
 
-      console.log(main)
+      console.log(main);
     }
-  })
+  });
 
-  content.appendChild(main)
-})
+  content.appendChild(main);
+});

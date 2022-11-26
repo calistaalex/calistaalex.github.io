@@ -534,11 +534,15 @@ input.radio-button:checked {
 @-o-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 
-.work {
+.work-content {
   margin: 0 auto;
   width: 50vw;
   max-width: 50em;
-  padding-top: 10vh;
+  padding-top: 20vh;
+}
+
+.sticky-bound {
+  position: relative;
 }
 
 .work-container {
@@ -547,14 +551,11 @@ input.radio-button:checked {
   height: 80vh;
   bottom: 10vh;
   margin-bottom: 10vh;
-  img {
-    display: block;
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-  }
 }
 
-.sticky-bound {
-  position: relative;
+.work-container img {
+  display: block;
+  width: auto;
+  height: 75%;
+  margin: 0 auto;
 }
