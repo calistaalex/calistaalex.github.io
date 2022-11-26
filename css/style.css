@@ -616,17 +616,92 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #030303;
+  background-color: var(--secondary-light);
+	color: var(--text);
   height: auto;
   width: 100vw;
   padding: 100px;
-  color: #E0F600;
+	margin-left: -8px;
+	margin-bottom: -8px;
 }
 
-.footer-content {
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.footer-container .item {
+	flex: 1 1 20em;
+	background-color: transparent;
+	/* border: 1px solid #000; */
+}
+
+.footer-container h1 {
+	font-family: "SF UI", sans-serif;
+	font-style: normal;
+	font-size: 185%;
+	color: var(--text);
+	padding-bottom: 10px;
+	border-bottom: 2.5px solid var(--text);
+}
+
+.footer-container h2 {
+	font-size: 160%;
+	color: var(--text);
+}
+
+.footer-container h3 {
+	font-family: "Libre Baskerville", sans-serif;
+	font-style: italic;
+	font-size: 140%;
+	color: var(--text);
+}
+
+.footer-container p {
+	line-height: 140%;
+}
+
+.footer-container a {
+	display: block;
+	color: var(--text);
+	font-size: 120%;
+	font-weight: 700;
+	line-height: 140%;
+	text-decoration: none;
+	transition-property: color, font-style;
+	transition-duration: 0.25s;
+}
+
+.footer-container a:hover, .footer-container a:focus {
+	color: var(--primary);
+	font-style: italic;
+	text-decoration: none;
+}
+
+.footer-left {
+	float: left;
+}
+
+#center {
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.center {
+	float:
+	text-align: center;
+}
+
+.right {
+	float: right;
+	text-align: right;
+}
+
+/* .footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
+} */
