@@ -107,3 +107,15 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box, then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+jQuery(document).ready(function($){
+
+	$('a').click(function(e){
+		e.preventDefault();
+		$id = $(this).attr('href');
+		$('body,html').animate({
+			scrollTop: $($id).offset().top
+		}, 500);
+	});
+
+});
