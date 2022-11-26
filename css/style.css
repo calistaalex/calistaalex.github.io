@@ -28,6 +28,11 @@ main {
 	background-color: #FEFEFE;
 }
 
+.content {
+	margin-top: 100px;
+	padding-bottom: 150px;
+}
+
 .element {
 	margin: 50px 0px 50px 0px;
 }
@@ -51,6 +56,14 @@ main {
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
 	font-size: 280%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+h2.strategy {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 200%;
 	font-weight: 400;
 	line-height: 140%;
 }
@@ -590,7 +603,6 @@ input.radio-button:checked {
   margin: 0 auto;
   height: 80vh;
   bottom: 10vh;
-  margin-bottom: 10vh;
 }
 
 .work-container img {

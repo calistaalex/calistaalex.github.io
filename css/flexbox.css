@@ -16,8 +16,8 @@ By: Calista Alex
 .container .item {
 	flex: 1 1 15em;
 	padding: 1rem 2rem 2rem 2rem;
-	background-color: #FFF;
-	border: 2px solid var(--text);
+	background-color: transparent;
+	/* border: 2px solid var(--text); */
 }
 
 .container .item img {
