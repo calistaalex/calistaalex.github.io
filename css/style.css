@@ -616,7 +616,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--secondary-light);
+  background-color: var(--text);
 	color: var(--text);
   height: auto;
   width: 100vw;
@@ -634,7 +634,6 @@ footer {
 .footer-container .item {
 	flex: 1 1 20em;
 	background-color: transparent;
-	/* border: 1px solid #000; */
 }
 
 .footer-container h1 {
@@ -656,18 +655,31 @@ footer {
 	font-family: "Libre Baskerville", sans-serif;
 	font-style: italic;
 	font-size: 140%;
+	color: var(--background);
+	/* color: var(--primary); */
+	padding-bottom: 15px;
+	border-bottom: 2.5px solid var(--background);
+}
+
+.footer-container h4 {
+	font-family: "Libre Baskerville", sans-serif;
+	font-style: italic;
+	font-size: 100%;
+	line-height: 120%;
+	color: var(--background);
 	/* color: var(--primary); */
 	/* padding-bottom: 10px;
 	border-bottom: 2.5px solid var(--text); */
 }
 
 .footer-container p {
-	line-height: 140%;
+	color: var(--background);
+	line-height: 120%;
 }
 
 .footer-container a {
 	display: inline;
-	color: var(--text);
+	color: var(--background);
 	font-size: 120%;
 	font-weight: 700;
 	line-height: 140%;
@@ -682,13 +694,8 @@ footer {
 	text-decoration: none;
 }
 
-.footer-left {
-	float: left;
-}
-
 #center {
-	margin-right: 50px;
-	margin-left: 50px;
+	padding-right: 50px;
 }
 
 #left {
@@ -696,13 +703,40 @@ footer {
 }
 
 #right {
-
+	padding-left: 50px;
+	text-align: right;
 }
 
-/* .footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-} */
+.socials {
+	display: flex;
+	float: right;
+	/* margin: 3rem 0 3rem 0; */
+	list-style: none;
+}
+
+.socials li {
+	margin: 0 10px;
+}
+
+.socials a {
+	text-decoration: none;
+	background-color: var(--background);
+	color: var(--text);
+	border-style: hidden;
+	padding: 10px;
+}
+
+.socials a:hover {
+	color: var(--primary);
+	transition: color 0.25s ease;
+	/* color: var(--background);
+	transition: color 0.25s ease;
+	background-color: var(--primary);
+	transition: background-color 0.25s ease; */
+}
+
+.socials a i {
+	font-size: 1.25rem;
+	width: 20px;
+	transition: color 0.2s ease;
+}
