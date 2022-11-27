@@ -656,7 +656,6 @@ footer {
 	font-style: italic;
 	font-size: 140%;
 	color: var(--background);
-	/* color: var(--primary); */
 	padding-bottom: 15px;
 	border-bottom: 2.5px solid var(--background);
 }
@@ -667,9 +666,6 @@ footer {
 	font-size: 100%;
 	line-height: 120%;
 	color: var(--background);
-	/* color: var(--primary); */
-	/* padding-bottom: 10px;
-	border-bottom: 2.5px solid var(--text); */
 }
 
 .footer-container p {
@@ -698,45 +694,7 @@ footer {
 	padding-right: 50px;
 }
 
-#left {
-
-}
-
 #right {
 	padding-left: 50px;
 	text-align: right;
-}
-
-.socials {
-	display: flex;
-	float: right;
-	/* margin: 3rem 0 3rem 0; */
-	list-style: none;
-}
-
-.socials li {
-	margin: 0 10px;
-}
-
-.socials a {
-	text-decoration: none;
-	background-color: var(--background);
-	color: var(--text);
-	border-style: hidden;
-	padding: 10px;
-}
-
-.socials a:hover {
-	color: var(--primary);
-	transition: color 0.25s ease;
-	/* color: var(--background);
-	transition: color 0.25s ease;
-	background-color: var(--primary);
-	transition: background-color 0.25s ease; */
-}
-
-.socials a i {
-	font-size: 1.25rem;
-	width: 20px;
-	transition: color 0.2s ease;
 }
