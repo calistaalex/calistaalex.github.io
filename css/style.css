@@ -25,7 +25,7 @@ body {
 main {
 	margin-top: 100px;
   padding: 100px;
-	background-color: #FEFEFE;
+	background-color: var(--secondary-light);
 }
 
 .content {
@@ -268,7 +268,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 50px 100px 50px 100px;
-	background: #FFF;
+	background: var(--background);
 }
 
 .logo {
