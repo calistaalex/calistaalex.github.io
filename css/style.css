@@ -37,6 +37,19 @@ main {
 	margin: 50px 0px 50px 0px;
 } */
 
+.title {
+	background-color: var(--primary);
+	height: 100%;
+}
+
+a.typewrite {
+	color: var(--text);
+	font-family: 'Libre Baskerville', serif;
+	font-size: 280%;
+	font-style: italic;
+	line-height: 140%;
+}
+
 .introduction {
 	margin-top: 100px;
 	margin-bottom: 100px;
