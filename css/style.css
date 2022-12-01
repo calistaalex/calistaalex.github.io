@@ -19,13 +19,13 @@ html {
 body {
 	font-family: 'SF UI', sans-serif;
 	font-size: 100%;
-	background-color: #FFF;
+	background-color: var(--background);
 }
 
 main {
 	margin-top: 100px;
   padding: 100px;
-	background-color: var(--secondary-light);
+	background-color: var(--background);
 }
 
 .content {
@@ -148,10 +148,28 @@ h2.strategy {
 	}
 }
 
+
+a.social-media {
+	display: inline;
+	float: left;
+	color: var(--text);
+	font-size: 175%;
+	font-weight: 700;
+	text-decoration: none;
+	transition-property: color, font-style;
+	transition-duration: 0.25s;
+}
+
+a.social-media:hover, a.social-media:focus {
+	color: var(--primary);
+	font-style: italic;
+	text-decoration: none;
+}
+
 a.email {
 	float: right;
 	color: var(--text);
-	font-size: 55%;
+	font-size: 175%;
 	font-weight: 700;
 	text-decoration: none;
 	transition-property: color, font-style;
@@ -269,6 +287,7 @@ header {
 	align-items: center;
 	padding: 50px 100px 50px 100px;
 	background: var(--background);
+	border-bottom: 3px solid var(--text);
 }
 
 .logo {
