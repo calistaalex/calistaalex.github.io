@@ -51,3 +51,129 @@ By: Calista Alex
 	/* padding: 5rem;
 	border: 3px solid var(--text); */
 }
+
+@media (max-width:800px) {
+	main {
+	  padding: 50px;
+	}
+
+	header {
+		padding: 50px;
+		display: block;
+	}
+
+	.logo {
+		display: block;
+		margin-bottom: 35px;
+	}
+
+	.navigation {
+		display: block;
+		padding-bottom: 30px;
+	}
+
+	.navigation ul {
+		display: block;
+		font-size: 110%;
+		line-height: 250%;
+		padding: 0;
+		margin: 0;
+	}
+
+	a.navigation {
+		display: block;
+		margin-top: 0;
+		line-height: 120%;
+	}
+
+	.work-content {
+		display: none;
+	}
+
+	.work-list {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	.work-name h2 {
+		display: none;
+		color: var(--text);
+		font-family: 'Cera Pro', sans-serif;
+		font-size: 280%;
+		font-weight: 700;
+		line-height: 140%;
+	}
+
+	.work-name a {
+		display: inline-block;
+		color: var(--text);
+		font-family: 'SF UI', sans-serif;
+		font-size: 250%;
+		font-weight: 400;
+		line-height: 140%;
+	}
+
+	.work-client {
+		position: relative;
+		top: 0;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	.work-client h3 {
+		display: block;
+		color: var(--text);
+		font-family: 'SF UI', sans-serif;
+		font-size: 145%;
+		font-weight: 400;
+		line-height: 140%;
+	}
+
+	.introduction {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.introduction h1 {
+		display: inline;
+		color: var(--text);
+		font-family: 'Libre Baskerville', serif;
+		font-size: 200%;
+		font-style: italic;
+		line-height: 160%;
+	}
+
+	.introduction h2 {
+		display: inline;
+		color: var(--text);
+		font-family: 'SF UI', sans-serif;
+		font-size: 200%;
+		font-weight: 400;
+		line-height: 160%;
+	}
+
+	.availability-text h3 {
+		position: relative;
+		top: -10px;
+		left: 15px;
+		color: var(--text);
+		font-family: 'SF UI', sans-serif;
+		font-size: 145%;
+		font-weight: 400;
+		line-height: 120%;
+	}
+
+	footer {
+		padding: 50px;
+	}
+
+	.footer-container a {
+		display: block;
+	}
+
+	#right {
+		padding-left: 0;
+		text-align: left;
+	}
+
+}
