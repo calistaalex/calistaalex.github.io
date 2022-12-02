@@ -561,7 +561,6 @@ input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:afte
 	color: var(--text);
   font-size: 120%;
   font-weight: 400;
-
 }
 
 .select-field select {
