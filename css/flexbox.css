@@ -91,6 +91,11 @@ By: Calista Alex
 		display: block;
 	}
 
+	.header {
+		padding: 0px;
+		display: block;
+	}
+
 	.logo {
 		display: block;
 		margin-bottom: 35px;
