@@ -58,7 +58,7 @@ h1.typewrite {
 	color: var(--text);
 	/* font-family: 'Libre Baskerville', serif; */
 	font-family: 'SF UI', sans-serif;
-	font-size: 800%;
+	font-size: 750%;
 	/* font-style: italic; */
 	font-style: normal;
 	line-height: 140%;
@@ -442,6 +442,42 @@ a.in-text:focus {
 	color: var(--text);
   font-size: 120%;
   font-weight: 400;
+}
+
+h4.portfolio {
+	margin-bottom: -10px;
+	color: var(--text);
+  font-size: 200%;
+  font-weight: 700;
+}
+
+h5.portfolio {
+	margin-bottom: -10px;
+	color: var(--secondary-dark);
+  font-size: 180%;
+  font-weight: 700;
+	font-style: italic;
+}
+
+p.portfolio {
+	color: var(--text);
+  font-size: 150%;
+  font-weight: 400;
+}
+
+p.description {
+	color: var(--text);
+  font-size: 120%;
+  font-weight: 400;
+}
+
+p.caption {
+	color: var(--secondary-dark);
+  font-size: 120%;
+  font-weight: 400;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 textarea {
