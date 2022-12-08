@@ -17,7 +17,6 @@ By: Calista Alex
 	flex: 1 1 15em;
 	padding: 1rem 2rem 2rem 2rem;
 	background-color: transparent;
-	/* border: 2px solid var(--text); */
 }
 
 .container .item img {
@@ -27,11 +26,6 @@ By: Calista Alex
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: -15px;
-}
-
-.small-width {
-	padding-left: 10em;
-	padding-right: 10em;
 }
 
 .container .portfolio-item {
@@ -48,8 +42,6 @@ By: Calista Alex
 	margin-right: auto;
 	margin-top: 75px;
 	margin-bottom: -15px;
-	/* padding: 5rem;
-	border: 3px solid var(--text); */
 }
 
 @media (max-width:800px) {

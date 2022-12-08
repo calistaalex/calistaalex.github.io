@@ -1,6 +1,5 @@
 /*
-MAIN [P03: Portfolio Project]
-By: Calista Alex
+Style CSS by Calista Alex
 */
 
 :root {
@@ -23,42 +22,119 @@ body {
 }
 
 main {
-	/* margin-top: 100px; */
-  /* padding: 100px; */
 	margin-top: 5em;
 	padding: 10em;
 	background-color: var(--background);
 }
 
 .content {
-	margin-top: 10em;
-	padding-bottom: 5em;
+	margin-top: 125px;
 }
 
 .content h2 {
+	margin-top: 125px;
+}
+
+.content h3 {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 175%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+h1 {
+	color: var(--text);
+	font-family: 'Libre Baskerville', serif;
+	font-size: 280%;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 140%;
+}
+
+h2 {
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
 	font-size: 280%;
 	font-weight: 400;
 	line-height: 140%;
-	padding-bottom: 5em;
-	/* padding-bottom: 50px; */
+}
+
+h3 {
+	color: var(--primary);
+	font-size: 140%;
+	font-weight: 700;
+}
+
+h4 {
+	color: var(--text);
+	font-size: 120%;
+	font-weight: 700;
+}
+
+h5 {
+	color: var(--text);
+	font-size: 100%;
+	font-weight: 700;
+}
+
+p {
+	font-size: 110%;
+	font-weight: 400;
+}
+
+code {
+	display: block;
+	padding: 1em;
+	background-color: #EEE;
+	color: var(--text);
+	font-size: 110%;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+/* CONTAINER STYLING */
+.item a {
+	color: var(--text);
+	font-size: 120%;
+	font-weight: 700;
+	text-decoration: none;
+	transition-property: color, font-style;
+	transition-duration: 0.25s;
+}
+
+.item a:hover, .item a:focus {
+	color: var(--primary);
+	font-style: italic;
+	text-decoration: none;
+}
+
+/* .item h2 {
+	margin-top: -15px;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 175%;
+	font-weight: 400;
+	line-height: 140%;
+} */
+
+.item h3 {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 120%;
+	font-weight: 400;
+	text-decoration: none;
 }
 
 /* TITLE */
 .title {
-	height: 600px;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	/* height: 600px;
-	margin-top: 100px;
-	margin-bottom: 150px;
-	padding-bottom: 100px; */
+	height: 500px;
+	margin-bottom: 125px;
+	padding-bottom: 125px;
 	border-bottom: 5px solid var(--text);
 }
 
-h1.typewrite {
+.typewrite {
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
 	font-size: 750%;
@@ -119,7 +195,7 @@ h1.typewrite {
 
 .availability-text h3 {
 	position: relative;
-	top: -10px;
+	top: -7.5px;
 	left: 15px;
 	color: var(--text);
 	font-family: 'SF UI', sans-serif;
@@ -131,8 +207,8 @@ h1.typewrite {
 .availability, .availability::before {
 	float: left;
 	content: " ";
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
 	transition: all 0.25s;
 	background-color: var(--primary);
@@ -140,7 +216,7 @@ h1.typewrite {
 
 .availability::before {
 	background-color: var(--primary);
-	animation: blinking 1.5s infinite;
+	animation: blinking 1s infinite;
 }
 
 @-webkit-keyframes blinking {
@@ -155,7 +231,7 @@ h1.typewrite {
 }
 /* END OF INDEX */
 
-/* WORK */
+/* WORK LIST */
 .work-list {
 	margin-top: 35px;
 	margin-bottom: 35px;
@@ -193,7 +269,23 @@ h1.typewrite {
 	font-weight: 400;
 	line-height: 140%;
 }
-/* END OF WORK */
+/* END OF WORK LIST */
+
+/* HIDDEN IMAGE (FOR WORK LIST): https://codepen.io/aemabit/pen/KKKxZxb */
+.hidden-image {
+  display: none;
+}
+
+.hidden-text {
+  z-index: 99;
+}
+
+.hidden-text:hover ~ .hidden-image {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+/* END OF HIDDEN IMAGE */
 
 /* CONTACT */
 form {
@@ -201,56 +293,6 @@ form {
 	border: 5px solid var(--text);
 }
 /* END OF CONTACT */
-
-/* TEXT STYLING */
-h1 {
-	display: block;
-	color: var(--text);
-	font-family: 'Libre Baskerville', serif;
-	font-size: 280%;
-	font-style: italic;
-	line-height: 140%;
-}
-
-h2 {
-	color: var(--primary);
-	font-size: 130%;
-	font-weight: 700;
-}
-
-h3 {
-	color: var(--primary);
-	font-size: 120%;
-	font-weight: 700;
-}
-
-h4 {
-	color: var(--text);
-	font-size: 110%;
-	font-weight: 700;
-}
-
-h5 {
-	color: var(--text);
-	font-size: 100%;
-	font-weight: 700;
-}
-
-p {
-	font-size: 100%;
-	font-weight: 400;
-}
-
-code {
-	display: block;
-	padding: 12.5px;
-	background-color: #EEE;
-	color: var(--text);
-	font-size: 100%;
-	font-weight: 400;
-	line-height: 120%;
-}
-/* END OF TEXT STYLING */
 
 /* NAVIGATION BAR */
 header.scroll-up {
@@ -271,7 +313,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 50px 100px 50px 100px;
+	padding: 5em 10em 5em 10em;
 	background: var(--background);
 }
 
@@ -313,6 +355,23 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 
+a.call-to-action {
+	color: #FFF;
+	background-color: var(--text);
+	font-size: 110%;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.75em 1em 0.75em 1em;
+	transition-property: background-color, font-style;
+	transition-duration: 0.25s;
+}
+
+a.call-to-action:hover, a.call-to-action:focus {
+	color: #FFF;
+	background-color: var(--primary);
+	font-style: italic;
+}
+
 a.navigation {
 	color: var(--text);
 	font-size: 110%;
@@ -326,76 +385,6 @@ a.navigation:hover, a.navigation:focus {
 	color: var(--primary);
 	font-style: italic;
 	text-decoration: none;
-}
-
-a.navigation-button {
-	color: #FFF;
-	background-color: var(--text);
-	font-size: 110%;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.75em 1em 0.75em 1em;
-	transition-property: background-color;
-	transition-duration: 0.25s;
-}
-
-a.navigation-button:hover, a.navigation-button:focus {
-	background-color: var(--primary);
-}
-
-a.cta-button {
-	color: #FFF;
-	background-color: var(--text);
-	font-size: 110%;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.75em 1em 0.75em 1em;
-	transition-property: background-color, font-style;
-	transition-duration: 0.25s;
-}
-
-a.cta-button:hover, a.cta-button:focus {
-	color: #FFF;
-	background-color: var(--primary);
-	font-style: italic;
-}
-
-.button {
-	color: #FFF;
-	background-color: var(--text);
-	border-style: hidden;
-	font-size: 110%;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.75em 1em 0.75em 1em;
-	transition-property: background-color;
-	transition-duration: 0.25s;
-}
-
-.button:hover, .button:focus {
-	background-color: var(--primary);
-}
-
-a.in-text {
-	font-size: 110%;
-	font-weight: 700;
-  background: linear-gradient(to right, var(--secondary-dark), var(--secondary-dark)), linear-gradient(to right, var(--primary), var(--primary));
-  background-size: 100% 10px, 0 10px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
-a.in-text:hover {
-  background-size: 0 10px, 100% 10px;
-}
-
-a.in-text:focus {
-  background: linear-gradient(to right, var(--primary), var(--primary)), linear-gradient(to right, var(--primary), var(--primary));
-  background-size: 100% 10px, 0 10px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
 }
 
 a.squiggly {
@@ -431,47 +420,43 @@ a.image:hover {
 a.image:focus {
   opacity: 1;
 }
-/* END OF LINKS */
-/* CHANGE TO BUTTON FOR BUTTONS !! */
 
-.item a {
-	font-size: 120%;
+button {
+	color: #FFF;
+	background-color: var(--text);
+	border-style: hidden;
+	font-size: 110%;
 	font-weight: 700;
-	line-height: 140%;
 	text-decoration: none;
-	transition-property: color, font-style;
+	padding: 0.75em 1em 0.75em 1em;
+	transition-property: background-color;
 	transition-duration: 0.25s;
 }
 
-.item a:hover, .item a:focus {
-	color: var(--primary);
+button:hover, button:focus {
+	color: #FFF;
+	background-color: var(--primary);
 	font-style: italic;
-	text-decoration: none;
 }
-
-.item h3 {
-	color: var(--text);
-  font-size: 120%;
-  font-weight: 400;
-}
+/* END OF LINKS */
 
 /* CREATE NEW SECTION FOR PORTFOLIO INSTEAD!! */
-h4.portfolio {
+.portfolio-item h4 {
 	margin-bottom: -10px;
 	color: var(--text);
   font-size: 200%;
   font-weight: 700;
 }
 
-h5.portfolio {
+.portfolio-item h5 {
 	margin-bottom: -10px;
 	color: var(--secondary-dark);
-  font-size: 180%;
+  font-size: 150%;
   font-weight: 700;
 	font-style: italic;
 }
 
-p.portfolio {
+.portfolio-item p {
 	color: var(--text);
   font-size: 150%;
   font-weight: 400;
@@ -509,7 +494,7 @@ textarea {
 
 input.floating-field {
   display: flex;
-	width: 300px;
+	width: 350px;
 	background-color: transparent;
 	border: none;
   border-bottom: 2.5px solid var(--text);
@@ -724,6 +709,7 @@ input.radio-button:checked {
   margin: 0 auto;
 }
 
+/* FOOTER */
 footer {
   bottom: 0;
   left: 0;
@@ -732,7 +718,6 @@ footer {
 	color: var(--text);
   height: auto;
   width: 100vw;
-  /* padding: 50px 100px 50px 100px; */
 	padding: 5em 10em 5em 10em;
 	margin-left: -8px;
 	margin-bottom: -8px;
@@ -757,7 +742,7 @@ footer {
 .footer-container a {
 	display: inline;
 	color: var(--background);
-	font-size: 120%;
+	font-size: 110%;
 	font-weight: 700;
 	line-height: 140%;
 	text-decoration: none;
@@ -775,3 +760,4 @@ footer {
 	padding-left: 50px;
 	text-align: right;
 }
+/* END OF FOOTER  */

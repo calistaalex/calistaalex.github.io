@@ -12,118 +12,129 @@
 </head>
 
 <body>
+  <!-- NAVIGATION BAR -->
   <header>
     <div class="logo">
       <a href="../index.html"><img src="../img/logo.png" width="200" alt="Calista Alex"/></a>
     </div>
     <div class="navigation">
       <ul>
-        <li><a class="navigation" href="about.html">about me</a></li>
-        <li><a class="navigation" href="works.html">my works</a></li>
-        <li><a class="cta-button" href="contact.html">get in touch</a></li>
+        <li><a class="navigation" href="about.html">About Me</a></li>
+        <li><a class="navigation" href="works.html">My Works</a></li>
+        <li><a class="call-to-action" href="contact.html">Get In Touch</a></li>
       </ul>
     </div>
   </header>
+  <!-- END OF NAVIGATION BAR -->
 
   <main>
+    <!-- TITLE -->
     <div class="title">
-      <h1 class="typewrite" data-period="500" data-type='["get in touch"]'><span class="wrap"></span></a>
-    </div>
+      <h1 class="typewrite" data-period="500" data-type='["Get In Touch"]'><span class="wrap"></span></a>
+      </div>
+      <!-- END OF TITLE -->
 
-    <div class="content">
-      <div class="container">
-        <div class="item">
-          <h1>contacts</h1>
-          <br>
-          <h3>Email</h3>
-          <a href="mailto: calex@sfu.ca">calex@sfu.ca</a>
-          <br><br>
-          <h3>Phone Number</h3>
-          <a href="tel: +1 (236) 878-7696">+1 (236) 878-7696</a>
-          <br><br>
-          <h3>Instagram</h3>
-          <a href="https://instagram.com/calistaalex">@calistaalex</a>
-        </div>
-
+      <div class="content">
         <div class="container">
-          <form>
-            <div class="container">
-              <div class="item">
-                <h1>contact form</h1>
-              </div>
-            </div>
+          <!-- CONTACTS -->
+          <div class="item">
+            <h1>Contacts</h1>
+            <h3>Email:</h3>
+            <a href="mailto: calex@sfu.ca">calex@sfu.ca</a>
+            <br><br>
+            <h3>Phone Number:</h3>
+            <a href="tel: +1 (236) 878-7696">+1 (236) 878-7696</a>
+            <br><br>
+            <h3>Instagram:</h3>
+            <a href="https://instagram.com/calistaalex">@calistaalex</a>
+          </div>
+          <!-- END OF CONTACTS -->
 
-            <div class="container">
-              <div class="item">
-                <div class="text-input">
-                  <input class="floating-field" type="text" required> <span class="highlight"></span>
-                  <span class="bar"></span> <label class="floating-label">First Name</label>
+          <div class="container">
+            <!-- CONTACT FORM -->
+            <form>
+              <div class="container">
+                <div class="item">
+                  <h1>Contact Form</h1>
                 </div>
               </div>
-              <div class="item">
-                <div class="text-input">
-                  <input class="floating-field" type="text" required> <span class="highlight"></span>
-                  <span class="bar"></span> <label class="floating-label">Last Name</label>
+
+              <div class="container">
+                <div class="item">
+                  <div class="text-input">
+                    <input class="floating-field" type="text" required> <span class="highlight"></span>
+                    <span class="bar"></span> <label class="floating-label">First Name</label>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="text-input">
+                    <input class="floating-field" type="text" required> <span class="highlight"></span>
+                    <span class="bar"></span> <label class="floating-label">Last Name</label>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="container">
-              <div class="item">
-                <div class="text-input">
-                  <input class="floating-field" type="text" required> <span class="highlight"></span>
-                  <span class="bar"></span> <label class="floating-label">Email</label>
+              <div class="container">
+                <div class="item">
+                  <div class="text-input">
+                    <input class="floating-field" type="text" required> <span class="highlight"></span>
+                    <span class="bar"></span> <label class="floating-label">Email</label>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="text-input">
+                    <input class="floating-field" type="text" required> <span class="highlight"></span>
+                    <span class="bar"></span> <label class="floating-label">Phone Number</label>
+                  </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="text-input">
-                  <input class="floating-field" type="text" required> <span class="highlight"></span>
-                  <span class="bar"></span> <label class="floating-label">Phone Number</label>
+
+              <div class="container">
+                <div class="item">
+                  <div class="select-field" style="width:auto;">
+                    <select>
+                      <option value="0">Subject:</option>
+                      <option value="1">Official Inquiries</option>
+                      <option value="2">Co-op Inquiries</option>
+                      <option value="3">Others</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="container">
-              <div class="item">
-                <div class="select-field" style="width:auto;">
-                  <select>
-                    <option value="0">Subject:</option>
-                    <option value="1">Official Inquiries</option>
-                    <option value="2">Co-op Inquiries</option>
-                    <option value="3">Others</option>
-                  </select>
+              <div class="container">
+                <div class="item">
+                  <textarea rows="8"></textarea>
                 </div>
               </div>
-            </div>
 
-            <div class="container">
-              <div class="item">
-                <textarea rows="8"></textarea>
+              <div class="container">
+                <div class="item">
+                  <button type="submit" value="Submit">Submit</button>
+                </div>
               </div>
-            </div>
-
-            <div class="container">
-              <div class="item">
-                <button class="button" type="submit" value="Submit">Submit</button>
-              </div>
-            </div>
-          </form>
+            </form>
+            <!-- END OF CONTACT FORM -->
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="item" id="left">
-        <p>By Calista Alex</p>
-        <p>Copyright © 2022 Calista Alex. All Rights Reserved.</p>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="item" id="left">
+          <p>By Calista Alex</p>
+          <p>Copyright © 2022 Calista Alex. All Rights Reserved.</p>
+        </div>
+        <div class="item" id="right">
+          <p><a href="style-guide.html">Style Guide</a> + <a href="citations.html">Citations</a> + <a href="https://github.com/calistaalex/calistaalex.github.io">Repository</a></p>
+        </div>
       </div>
-      <div class="item" id="right">
-        <p><a href="style-guide.html">style guide</a> + <a href="https://github.com/calistaalex/calistaalex.github.io">repository</a></p>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/main.js"></script>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script src="../js/main.js"></script>
+
   </body>
   </html>
