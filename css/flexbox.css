@@ -1,6 +1,9 @@
 /*
-FLEXBOX [P03: Portfolio Project]
-By: Calista Alex
+
+P03: PORTFOLIO PROJECT
+FLEXBOX.CSS
+By Calista Alex
+
 */
 
 * {
@@ -31,7 +34,6 @@ By: Calista Alex
 .container .portfolio-item {
 	flex: 1 1 15em;
 	background-color: transparent;
-	/* border: 2px solid var(--text); */
 }
 
 .container .portfolio-item img {
@@ -41,7 +43,6 @@ By: Calista Alex
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 75px;
-	margin-bottom: -15px;
 }
 
 @media (max-width:800px) {
@@ -72,10 +73,6 @@ By: Calista Alex
 		margin-top: 50px;
 		padding: 50px;
 		border: 5px solid var(--text);
-	}
-
-	.small-width {
-		padding: 0;
 	}
 
 	header {
@@ -177,16 +174,7 @@ By: Calista Alex
 		font-weight: 400;
 		line-height: 160%;
 	}
-
-	.content h2 {
-		color: var(--text);
-		font-family: 'SF UI', sans-serif;
-		font-size: 200%;
-		font-weight: 400;
-		line-height: 160%;
-		padding-bottom: 50px;
-	}
-
+	
 	.availability-text h3 {
 		position: relative;
 		top: -10px;

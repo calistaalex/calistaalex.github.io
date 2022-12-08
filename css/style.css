@@ -1,5 +1,9 @@
 /*
-Style CSS by Calista Alex
+
+P03: PORTFOLIO PROJECT
+STYLE.CSS
+By Calista Alex
+
 */
 
 :root {
@@ -25,22 +29,6 @@ main {
 	margin-top: 5em;
 	padding: 10em;
 	background-color: var(--background);
-}
-
-.content {
-	margin-top: 125px;
-}
-
-.content h2 {
-	margin-top: 125px;
-}
-
-.content h3 {
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 175%;
-	font-weight: 400;
-	line-height: 140%;
 }
 
 h1 {
@@ -93,208 +81,7 @@ code {
 	line-height: 120%;
 }
 
-/* CONTAINER STYLING */
-.item a {
-	color: var(--text);
-	font-size: 120%;
-	font-weight: 700;
-	text-decoration: none;
-	transition-property: color, font-style;
-	transition-duration: 0.25s;
-}
-
-.item a:hover, .item a:focus {
-	color: var(--primary);
-	font-style: italic;
-	text-decoration: none;
-}
-
-/* .item h2 {
-	margin-top: -15px;
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 175%;
-	font-weight: 400;
-	line-height: 140%;
-} */
-
-.item h3 {
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 120%;
-	font-weight: 400;
-	text-decoration: none;
-}
-
-/* TITLE */
-.title {
-	height: 500px;
-	margin-bottom: 125px;
-	padding-bottom: 125px;
-	border-bottom: 5px solid var(--text);
-}
-
-.typewrite {
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 750%;
-	font-style: normal;
-	line-height: 140%;
-  display: inline-block;
-  vertical-align: middle;
-}
-/* END OF TITLE */
-
-/* STYLE GUIDE */
-.title-guide {
-	height: 600px;
-	margin-top: 1em;
-	margin-bottom: -0.3em;
-	padding-bottom: 1em;
-	/* margin-top: 100px;
-	margin-bottom: -30px;
-	padding-bottom: 100px; */
-	border-bottom: 5px solid var(--text);
-}
-
-.element {
-	margin: 5em 0 5em 0;
-	padding-bottom: 5em;
-	border-bottom: 5px solid var(--text);
-}
-/* END OF STYLE GUIDE */
-
-/* INDEX */
-.introduction {
-	margin-top: 3em;
-	margin-bottom: 3em;
-}
-
-.introduction h1 {
-	display: inline;
-	color: var(--text);
-	font-family: 'Libre Baskerville', serif;
-	font-size: 280%;
-	font-style: italic;
-	line-height: 140%;
-}
-
-.introduction h2 {
-	display: inline;
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 280%;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-.details {
-	margin-top: 6em;
-	margin-bottom: 6em;
-}
-
-.availability-text h3 {
-	position: relative;
-	top: -7.5px;
-	left: 15px;
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 175%;
-	font-weight: 400;
-	line-height: 120%;
-}
-
-.availability, .availability::before {
-	float: left;
-	content: " ";
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	transition: all 0.25s;
-	background-color: var(--primary);
-}
-
-.availability::before {
-	background-color: var(--primary);
-	animation: blinking 1s infinite;
-}
-
-@-webkit-keyframes blinking {
-	50%   {
-		transform: scale(2);
-		opacity: 0;
-	}
-	100%   {
-		transform: scale(2);
-		opacity: 0;
-	}
-}
-/* END OF INDEX */
-
-/* WORK LIST */
-.work-list {
-	margin-top: 35px;
-	margin-bottom: 35px;
-}
-
-.work-name h2 {
-	display: inline;
-	color: var(--text);
-	font-family: 'Cera Pro', sans-serif;
-	font-size: 280%;
-	font-weight: 700;
-	line-height: 140%;
-}
-
-.work-name a {
-	display: inline;
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 280%;
-	font-weight: 400;
-	line-height: 140%;
-}
-
-.work-client {
-	position: relative;
-	top: -50px;
-	float: right;
-}
-
-.work-client h3 {
-	display: inline;
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-	font-size: 175%;
-	font-weight: 400;
-	line-height: 140%;
-}
-/* END OF WORK LIST */
-
-/* HIDDEN IMAGE (FOR WORK LIST): https://codepen.io/aemabit/pen/KKKxZxb */
-.hidden-image {
-  display: none;
-}
-
-.hidden-text {
-  z-index: 99;
-}
-
-.hidden-text:hover ~ .hidden-image {
-  display: block;
-  position: absolute;
-  z-index: 2;
-}
-/* END OF HIDDEN IMAGE */
-
-/* CONTACT */
-form {
-	padding: 1rem 2rem 2rem 2rem;
-	border: 5px solid var(--text);
-}
-/* END OF CONTACT */
-
-/* NAVIGATION BAR */
+/* NAVIGATION BAR: https://www.cssscript.com/show-hide-navbar-scroll-down-up/ */
 header.scroll-up {
 	transform: translateY(0);
 }
@@ -345,6 +132,334 @@ header {
 }
 /* END OF NAVIGATION BAR */
 
+/* MOUSE SCROLL: https://codepen.io/rightblog/pen/EagNMN/ */
+.mouse-scroll {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 100px;
+}
+
+.mouse {
+  height: 50px;
+  width: 25px;
+  border-radius: 15px;
+  transform: none;
+  border: 2.5px solid var(--text);
+  top: 180px;
+}
+
+.wheel {
+  height: 10px;
+  width: 5px;
+  display: block;
+  margin: 5px auto;
+  background: #000;
+  position: relative;
+  height: 7.5px;
+  width: 7.5px;
+  border: 2.5px solid var(--primary);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.wheel { animation: mouse-wheel 1s linear infinite; }
+
+@-webkit-keyframes mouse-wheel { 0% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } 100% { opacity: 0; -webkit-transform: translateY(6px); -ms-transform: translateY(6px); transform: translateY(6px); } }
+@-moz-keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
+@-o-keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
+@keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
+@-webkit-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+@-moz-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+@-o-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+@keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+/* END OF MOUSE SCROLL */
+
+/* TITLE: https://css-tricks.com/snippets/css/typewriter-effect/ */
+.title {
+	height: 500px;
+	/* margin-bottom: 125px; */
+	padding-bottom: 125px;
+	border-bottom: 5px solid var(--text);
+}
+
+.typewrite {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 750%;
+	font-style: normal;
+	line-height: 140%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* END OF TITLE */
+
+/* CONTENT ELEMENTS */
+.content {
+	margin-top: 125px;
+}
+
+.content h2 {
+	margin-top: 125px;
+}
+
+.content h3 {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 175%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.element {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.element h2 {
+	color: var(--primary);
+	font-family: 'SF UI', sans-serif;
+	font-size: 180%;
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+.element a {
+	font-size: 110%;
+	padding-bottom: 5px;
+}
+
+h1.line {
+	padding-bottom: 125px;
+	border-bottom: 5px solid var(--text);
+}
+
+h1.line-double {
+	padding-top: 125px;
+	border-top: 5px solid var(--text);
+	padding-bottom: 125px;
+	border-bottom: 5px solid var(--text);
+}
+
+.item a {
+	color: var(--text);
+	font-size: 120%;
+	font-weight: 700;
+	text-decoration: none;
+	transition-property: color, font-style;
+	transition-duration: 0.25s;
+}
+
+.item a:hover, .item a:focus {
+	color: var(--primary);
+	font-style: italic;
+	text-decoration: none;
+}
+
+.item h3 {
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 120%;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.portfolio-item h4 {
+	margin-bottom: -10px;
+	color: var(--text);
+  font-size: 200%;
+  font-weight: 700;
+}
+
+.portfolio-item h5 {
+	margin-bottom: -10px;
+	color: var(--secondary-dark);
+  font-size: 150%;
+  font-weight: 700;
+	font-style: italic;
+}
+
+.portfolio-item p {
+	color: var(--text);
+  font-size: 150%;
+  font-weight: 400;
+}
+
+p.description {
+	color: var(--text);
+  font-size: 120%;
+  font-weight: 400;
+}
+
+p.caption {
+	color: var(--secondary-dark);
+  font-size: 120%;
+  font-weight: 400;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+/* END OF CONTENT ELEMENTS */
+
+/* INTRODUCTION */
+.introduction {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.introduction h1 {
+	display: inline;
+	color: var(--text);
+	font-family: 'Libre Baskerville', serif;
+	font-size: 280%;
+	font-style: italic;
+	line-height: 140%;
+}
+
+.introduction h2 {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 280%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.details {
+	margin-top: 6em;
+	margin-bottom: 6em;
+}
+/* END OF INTRODUCTION */
+
+/* BLINKING CIRCLE: https://codepen.io/declik/pen/eGJbEb */
+.availability-text {
+	position: relative;
+	top: -7.5px;
+	left: 15px;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 175%;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.availability, .availability::before {
+	float: left;
+	content: " ";
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	transition: all 0.25s;
+	background-color: var(--primary);
+}
+
+.availability::before {
+	background-color: var(--primary);
+	animation: blinking 1s infinite;
+}
+
+@-webkit-keyframes blinking {
+	50%   {
+		transform: scale(2);
+		opacity: 0;
+	}
+	100%   {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+/* END OF BLINKING CIRCLE */
+
+/* WORK LIST */
+.work-list {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.work-client {
+	position: relative;
+	top: -50px;
+	float: right;
+}
+
+.work-name h2 {
+	display: inline;
+	color: var(--text);
+	font-family: 'Cera Pro', sans-serif;
+	font-size: 280%;
+	font-weight: 700;
+	line-height: 140%;
+}
+
+.work-client h3 {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 175%;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.work-name a {
+	display: inline;
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+	font-size: 280%;
+	font-weight: 400;
+	line-height: 140%;
+}
+/* END OF WORK LIST */
+
+/* HIDDEN WORK IMAGES: https://codepen.io/aemabit/pen/KKKxZxb */
+.hidden-image {
+  display: none;
+}
+
+.hidden-text {
+  z-index: 99;
+}
+
+.hidden-text:hover ~ .hidden-image {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+/* END OF HIDDEN WORK IMAGES */
+
+/* STICKY WORK IMAGES: https://codepen.io/RMKNGY/pen/RwPBwJz */
+.sticky-bound {
+	position: relative;
+}
+
+.work-content {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 80vw;
+  padding-top: 20vh;
+}
+
+.work-container {
+  position: sticky;
+  margin: 0 auto;
+  height: 80vh;
+  bottom: 0vh;
+}
+
+.work-container img {
+  display: block;
+  width: auto;
+  height: 80%;
+  margin: 0 auto;
+}
+/* END OF STICKY WORK IMAGES */
+
+/* FORM */
+form {
+	padding: 1rem 2rem 2rem 2rem;
+	border: 5px solid var(--text);
+}
+/* END OF FORM */
+
 /* LINKS */
 a {
 	color: inherit;
@@ -387,24 +502,6 @@ a.navigation:hover, a.navigation:focus {
 	text-decoration: none;
 }
 
-a.squiggly {
-  background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 3px 3px;
-  color: #000;
-  text-decoration: none;
-}
-
-a.squiggly:hover {
-	color: var(--primary);
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%230100FE' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 10px;
-  background-repeat: repeat-x;
-  text-decoration: none;
-}
-
 a.image {
   display: flex;
   flex-wrap: wrap;
@@ -440,54 +537,27 @@ button:hover, button:focus {
 }
 /* END OF LINKS */
 
-/* CREATE NEW SECTION FOR PORTFOLIO INSTEAD!! */
-.portfolio-item h4 {
-	margin-bottom: -10px;
-	color: var(--text);
-  font-size: 200%;
-  font-weight: 700;
+/* SQUIGGLY LINK: https://codemyui.com/theoutline-squiggle-link-hover-effect/ */
+a.squiggly {
+  background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
 }
 
-.portfolio-item h5 {
-	margin-bottom: -10px;
-	color: var(--secondary-dark);
-  font-size: 150%;
-  font-weight: 700;
-	font-style: italic;
+a.squiggly:hover {
+	color: var(--primary);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%230100FE' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 10px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
+/* END OF SQUIGGLY LINK */
 
-.portfolio-item p {
-	color: var(--text);
-  font-size: 150%;
-  font-weight: 400;
-}
-
-p.description {
-	color: var(--text);
-  font-size: 120%;
-  font-weight: 400;
-}
-
-p.caption {
-	color: var(--secondary-dark);
-  font-size: 120%;
-  font-weight: 400;
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
-
-textarea {
-  width: 100%;
-  padding: 15px;
-  background-color: transparent;
-  border: 2.5px solid var(--text);
-	color: var(--text);
-	font-family: 'SF UI', sans-serif;
-  font-size: 120%;
-  font-weight: 400;
-}
-
+/* SINGLE-LINE TEXT INPUT FIELD: https://codepen.io/chris__sev/pen/LYOyjY */
 .text-input {
   position: relative;
 }
@@ -551,7 +621,22 @@ input.floating-field:focus ~ label.floating-label, input.floating-field:valid ~ 
 input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:after {
   width: 100%;
 }
+/* END OF SINGLE-LINE TEXT INPUT FIELD */
 
+/* MULTI-LINE TEXT INPUT FIELD */
+textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 2.5px solid var(--text);
+	color: var(--text);
+	font-family: 'SF UI', sans-serif;
+  font-size: 120%;
+  font-weight: 400;
+}
+/* END OF MULTI-LINE TEXT INPUT FIELD */
+
+/* SELECT INPUT FIELD: https://www.w3schools.com/howto/howto_custom_select.asp/ */
 .select-field {
   position: relative;
   border: 2.5px solid var(--text);
@@ -613,8 +698,11 @@ input.floating-field:focus ~ .bar:before, input.floating-field:focus ~ .bar:afte
   background: var(--primary);
   transition: 0.25s all linear;
 }
+/* END OF SELECT INPUT FIELD */
 
+/* RADIO BUTTON: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio */
 label.radio-button {
+	font-size: 110%;
   line-height: 140%;
 }
 
@@ -640,74 +728,7 @@ input.radio-button:checked {
   border: 3px solid var(--text);
   transition: 0.25s all linear;
 }
-
-.mouse-scroll {
-  display: block;
-  margin: 0 auto;
-  width: 25px;
-  height: 100px;
-}
-
-.mouse {
-  height: 50px;
-  width: 25px;
-  border-radius: 15px;
-  transform: none;
-  border: 2.5px solid var(--text);
-  top: 180px;
-}
-
-.wheel {
-  height: 10px;
-  width: 5px;
-  display: block;
-  margin: 5px auto;
-  background: #000;
-  position: relative;
-  height: 7.5px;
-  width: 7.5px;
-  border: 2.5px solid var(--primary);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-.wheel {
-  animation: mouse-wheel 1s linear infinite;
-}
-
-@-webkit-keyframes mouse-wheel { 0% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } 100% { opacity: 0; -webkit-transform: translateY(6px); -ms-transform: translateY(6px); transform: translateY(6px); } }
-@-moz-keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
-@-o-keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
-@keyframes mouse-wheel { 0% { top: 1px; } 25% { top: 2px; } 50% { top: 3px; } 75% { top: 2px; } 100% { top: 1px; } }
-@-webkit-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-@-moz-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-@-o-keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-@keyframes mouse-scroll { 0% { opacity: 0; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-
-.sticky-bound {
-	position: relative;
-}
-
-.work-content {
-  margin: 0 auto;
-  width: 80vw;
-  max-width: 80vw;
-  padding-top: 20vh;
-}
-
-.work-container {
-  position: sticky;
-  margin: 0 auto;
-  height: 80vh;
-  bottom: 0vh;
-}
-
-.work-container img {
-  display: block;
-  width: auto;
-  height: 80%;
-  margin: 0 auto;
-}
+/* END OF RADIO BUTTON */
 
 /* FOOTER */
 footer {
