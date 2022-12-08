@@ -699,7 +699,6 @@ textarea {
 .select-items div, .select-selected {
 	padding: 1.25rem 1.25rem;
   color: var(--text);
-  outline: 2.5px solid var(--text);
   cursor: pointer;
 }
 
