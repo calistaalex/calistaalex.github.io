@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide | Calista Alex</title>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/flexbox.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html"><img src="../img/logo.png" width="200" alt="Calista Alex"/></a>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a class="navigation" href="about.html">about me</a></li>
+        <li><a class="navigation" href="works.html">my works</a></li>
+        <li><a class="cta-button" href="contact.html">get in touch</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-guide">
+      <h1 class="typewrite" data-period="500" data-type='["style guide"]'><span class="wrap"></span></a>
+    </div>
+
+    <div class="content">
+
+    <section id="interactive_elements">
+      <h1>👉 Interactive Elements</h1>
+
+      <section class="element">
+        <h3>In-Text Link</h3>
+        <h4>CSS Selector:</h4>
+        <p>a.in-text</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="in-text" href="#"&gt;Default Link&lt;/a&gt;</code>
+        <h4>Rendered Element:</h4>
+        <a class="squiggly" href="#">Default Link</a>
+      </section>
+
+      <section class="element">
+        <h3>Navigation Link</h3>
+        <h4>CSS Selector:</h4>
+        <p>a.navigation</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="navigation" href="#"&gt;Default Link&lt;/a&gt;</code>
+        <h4>Rendered Element:</h4>
+        <button href="#">Default Link</button>
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS Selector:</h4>
+        <p>button, [type="submit"]</p>
+        <p>button, [type="reset"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;button type="submit" value="Submit">Submit&lt;/button&gt;</code>
+        <code>&lt;button type="reset" value="Reset">Reset&lt;/button&gt;</code>
+        <h4>Rendered Element:</h4>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field With Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>input, [type="text"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;label for="text-field">Label:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="text-field"&gt;</code>
+        <h4>Rendered Element:</h4>
+        <div class="text-input">
+          <input class="floating-field" type="text" required> <span class="highlight"></span>
+          <span class="bar"></span> <label class="floating-label">Name</label>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Multi-Line Text Input Field</h3>
+        <h4>CSS Selector:</h4>
+        <p>textarea</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;textarea&gt;&lt;/textarea&gt;</code>
+        <h4>Rendered Element:</h4>
+        <textarea rows="5"></textarea>
+      </section>
+
+      <section class="element">
+        <h3>Select Input Field</h3>
+        <h4>CSS Selector:</h4>
+        <p>select-field</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;div class="select-field"&gt;&lt;/div&gt;</code>
+        <h4>Rendered Element:</h4>
+        <div class="select-field" style="width:auto;">
+          <select>
+            <option value="0">Selection:</option>
+            <option value="1">Selection 1</option>
+            <option value="2">Selection 2</option>
+            <option value="3">Selection 3</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button With Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>input, [type="radio"]</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-1" value="Button 1"/&gt;Radio Button 1&lt;/label&gt;</code>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-2" value="Button 2"/&gt;Radio Button 2&lt;/label&gt;</code>
+        <code>&lt;label&gt;&lt;input type="radio" name="radio-buttons" id="button-3" value="Button 3"/&gt;Radio Button 3&lt;/label&gt;</code>
+        <h4>Rendered Element:</h4>
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-1">Selection 1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-2">Selection 2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="radio-button"><input class="radio-button" type="radio" name="radio-selection" value="selection-3">Selection 3</label>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS Selector:</h4>
+        <p>a.image</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="image" href="#"&gt;&lt;img src="image.jpg" height="500" width="500" title="Image as a Link" alt="Image"&gt;&lt;/a&gt;</code>
+        <h4>Rendered Element:</h4>
+        <a class="image" href="art-curator.html"><img src="../img/art-curator/overview.jpg" width="100%" title="Art Curator" alt="Art Curator"></a>
+      </section>
+
+    </section>
+
+    <section id="text_elements">
+      <h1>👉 Text Elements</h1>
+
+      <section class="element">
+        <h3>Title</h3>
+        <h4>CSS Selector:</h4>
+        <p>.title</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;div class="title"&gt;&lt;/div&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h1 class="typewrite" data-period="500" data-type='["Title"]'><span class="wrap"></span></a>
+      </section>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>CSS Selector:</h4>
+        <p>h1, h2, h3, h4</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+        <h4>Rendered Element:</h4>
+        <h1>Heading 1</h1>
+        <h3>Heading 2</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 4</h5>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS Selector:</h4>
+        <p>p</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</code>
+        <h4>Rendered Element:</h4>
+        <p>I'm a User Experience Designer, Front-End Web Developer, and Problem-Solver in Vancouver, BC. I love designing for that sweet spot and bridging the gaps between User Experience Design Strategy and Technological Design Constraints.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS Selector:</h4>
+        <p>ol li</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;Item 1&lt;/li&gt;</code>
+        <code>&lt;li&gt;Item 2&lt;/li&gt;</code>
+        <code>&lt;li&gt;Item 3&lt;/li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+        <h4>Rendered Element:</h4>
+        <ol>
+          <li>List Item 1</li>
+          <br>
+          <li>List Item 2</li>
+          <br>
+          <li>List Item 3</li>
+        </ol>
+      </section>
+
+      <section class="element">
+        <h3>Image With Caption</h3>
+        <h4>CSS Selector:</h4>
+        <p>image</p>
+        <h4>Sample Code:</h4>
+        <code>&lt;img src="image.jpg" height="500" width="500" title="Image as a Link" alt="Image"&gt;&lt;/img&gt;</code>
+        <code>&lt;p class="caption"&gt;&lt;/p&gt;</code>
+        <h4>Rendered Element:</h4>
+        <img src="../img/art-curator/overview.jpg" width="100%" title="Art Curator" alt="Art Curator">
+        <p class="caption">Art Curator</p>
+      </section>
+
+    </section>
+
+    <section id="combined_elements">
+      <h1>👉 Combined Elements</h1>
+
+      <section class="element">
+        <h3>Navigation</h3>
+        <div class="header">
+          <div class="logo">
+            <a href="index.html"><img src="../img/logo.png" width="200" alt="Calista Alex"/></a>
+          </div>
+          <div class="navigation">
+            <ul>
+              <li><a class="navigation" href="html/about.html">about me</a></li>
+              <li><a class="navigation" href="html/works.html">my works</a></li>
+              <li><a class="cta-button" href="html/contact.html">get in touch</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Work Listing</h3>
+        <h1>Works</h1>
+        <div class="work-list">
+          <div class="work-name">
+            <h2>:&nbsp;</h2>
+            <a class="squiggly" href="#">Art Curator</a>
+          </div>
+          <div class="work-client">
+            <h3>Vancouver Art Gallery</h3>
+          </div>
+        </div>
+        <div class="work-list">
+          <div class="work-name">
+            <h2>:&nbsp;</h2>
+            <a class="squiggly" href="#">La Petite Mort + Microsite</a>
+          </div>
+          <div class="work-client">
+            <h3>Nederlands Dans Theater</h3>
+          </div>
+        </div>
+        <div class="work-list">
+          <div class="work-name">
+            <h2>:&nbsp;</h2>
+            <a class="squiggly" href="#">La Petite Mort + Print</a>
+          </div>
+          <div class="work-client">
+            <h3>Nederlands Dans Theater</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Contact Form</h3>
+        <form>
+          <div class="container">
+            <div class="item">
+              <h1>contact form</h1>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="text-input">
+                <input class="floating-field" type="text" required> <span class="highlight"></span>
+                <span class="bar"></span> <label class="floating-label">First Name</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="text-input">
+                <input class="floating-field" type="text" required> <span class="highlight"></span>
+                <span class="bar"></span> <label class="floating-label">Last Name</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="text-input">
+                <input class="floating-field" type="text" required> <span class="highlight"></span>
+                <span class="bar"></span> <label class="floating-label">Email</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="text-input">
+                <input class="floating-field" type="text" required> <span class="highlight"></span>
+                <span class="bar"></span> <label class="floating-label">Phone Number</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <div class="select-field" style="width:auto;">
+                <select>
+                  <option value="0">Subject:</option>
+                  <option value="1">Official Inquiries</option>
+                  <option value="2">Co-op Inquiries</option>
+                  <option value="3">Others</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <textarea rows="8"></textarea>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="item">
+              <button class="button" type="submit" value="Submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+    </section>
+
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="item" id="left">
+        <p>By Calista Alex</p>
+        <p>Copyright © 2022 Calista Alex. All Rights Reserved.</p>
+      </div>
+      <div class="item" id="right">
+        <p><a href="style-guide.html">style guide</a> + <a href="https://github.com/calistaalex/calistaalex.github.io">repository</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
