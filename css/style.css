@@ -801,7 +801,7 @@ footer {
 }
 
 .footer-container a:hover, .footer-container a:focus {
-	color: var(--primary);
+	color: var(--secondary-dark);
 	font-style: italic;
 	text-decoration: none;
 }

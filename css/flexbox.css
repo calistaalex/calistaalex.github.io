@@ -43,18 +43,59 @@ By Calista Alex
 	margin-top: 75px;
 }
 
+/* BREAKPOINT: 800PX */
 @media (max-width:800px) {
 	main {
 	  padding: 50px;
 	}
 
-	.title {
-		height: 600px;
-		margin-top: 100px;
-		margin-bottom: 50px;
-		padding-bottom: 100px;
-		border-bottom: 5px solid var(--text);
+	.content {
+		margin-top: 50px;
+		margin-bottom: 100px;
 	}
+
+	/* INDEX.HTML */
+	.introduction {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.introduction h1 {
+		display: inline;
+		color: var(--text);
+		font-family: 'Libre Baskerville', serif;
+		font-size: 200%;
+		font-style: italic;
+		line-height: 160%;
+	}
+
+	.introduction h2 {
+		display: inline;
+		color: var(--text);
+		font-family: 'SF UI', sans-serif;
+		font-size: 200%;
+		font-weight: 400;
+		line-height: 160%;
+	}
+
+	.availability-text {
+		display: inline-block;
+		top: 30px;
+		left: 0px;
+		font-size: 200%;
+		font-weight: 400;
+		line-height: 160%;
+	}
+	/* END OF INDEX.HTML */
+
+
+		.title {
+			height: 600px;
+			margin-top: 100px;
+			margin-bottom: 50px;
+			padding-bottom: 100px;
+			border-bottom: 5px solid var(--text);
+		}
 
 	.container .item {
 		padding: 30px;
@@ -150,39 +191,6 @@ By Calista Alex
 		line-height: 140%;
 	}
 
-	.introduction {
-		margin-top: 100px;
-		margin-bottom: 100px;
-	}
-
-	.introduction h1 {
-		display: inline;
-		color: var(--text);
-		font-family: 'Libre Baskerville', serif;
-		font-size: 200%;
-		font-style: italic;
-		line-height: 160%;
-	}
-
-	.introduction h2 {
-		display: inline;
-		color: var(--text);
-		font-family: 'SF UI', sans-serif;
-		font-size: 200%;
-		font-weight: 400;
-		line-height: 160%;
-	}
-
-	.availability-text h3 {
-		position: relative;
-		top: -10px;
-		left: 15px;
-		color: var(--text);
-		font-family: 'SF UI', sans-serif;
-		font-size: 145%;
-		font-weight: 400;
-		line-height: 120%;
-	}
 
 	footer {
 		padding: 50px;
