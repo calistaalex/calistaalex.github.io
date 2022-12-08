@@ -699,7 +699,7 @@ textarea {
 .select-items div, .select-selected {
 	padding: 1.25rem 1.25rem;
   color: var(--text);
-  outline: 2,5px solid var(--text);
+  outline: 2.5px solid var(--text);
   cursor: pointer;
 }
 
@@ -764,7 +764,6 @@ footer {
   left: 0;
   right: 0;
   background-color: var(--text);
-	color: var(--text);
   height: auto;
   width: 100vw;
 	padding: 5em 10em 5em 10em;
