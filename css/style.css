@@ -1,9 +1,7 @@
 /*
-
 P03: PORTFOLIO PROJECT
 STYLE.CSS
 By Calista Alex
-
 */
 
 :root {
@@ -178,7 +176,6 @@ header {
 /* TITLE: https://css-tricks.com/snippets/css/typewriter-effect/ */
 .title {
 	height: 500px;
-	/* margin-bottom: 125px; */
 	padding-bottom: 125px;
 	border-bottom: 5px solid var(--text);
 }
@@ -298,6 +295,21 @@ p.caption {
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+.arrows {
+	margin-top: 125px;
+	padding-top: 125px;
+	border-top: 5px solid var(--text);
+}
+
+p.arrow {
+	display: inline-block;
+}
+
+#right-arrow {
+	padding-left: 50px;
+	text-align: right;
 }
 /* END OF CONTENT ELEMENTS */
 
@@ -485,6 +497,22 @@ a.call-to-action:hover, a.call-to-action:focus {
 	color: #FFF;
 	background-color: var(--primary);
 	font-style: italic;
+}
+
+a.arrow {
+	color: #FFF;
+	background-color: var(--text);
+	font-size: 200%;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.75em;
+	transition-property: background-color;
+	transition-duration: 0.25s;
+}
+
+a.arrow:hover, a.arrow:focus {
+	color: #FFF;
+	background-color: var(--primary);
 }
 
 a.navigation {
