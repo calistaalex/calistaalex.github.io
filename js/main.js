@@ -1,8 +1,10 @@
 /*
-MAIN [P03: Portfolio Project]
-By: Calista Alex
+P03: PORTFOLIO PROJECT
+MAIN.JS
+By Calista Alex
 */
 
+// NAVIGATION BAR: https://www.cssscript.com/show-hide-navbar-scroll-down-up/
 const body = document.body;
 const header = document.querySelector("header");
 const main = document.querySelector("main");
@@ -14,8 +16,6 @@ let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
   let currentScroll = window.pageYOffset;
-  // console.log("current: ", currentScroll);
-  // console.log("last: ", lastScroll);
   if (currentScroll - lastScroll > 0) {
     header.classList.add("scroll-down");
     header.classList.remove("scroll-up");
@@ -25,9 +25,10 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scroll-down");
   }
   lastScroll = currentScroll;
-  // console.log("last: ", lastScroll);
 });
+// END OF NAVIGATION BAR
 
+// SELECT INPUT FIELD: https://www.w3schools.com/howto/howto_custom_select.asp/
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("select-field");
 l = x.length;
@@ -107,7 +108,9 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box, then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+// END OF SELECT INPUT FIELD
 
+// STICKY WORK IMAGES: https://codepen.io/RMKNGY/pen/RwPBwJz
 const images = [
   './img/art-curator/overview.jpg',
   './img/lpm-microsite/overview.jpg',
@@ -153,7 +156,9 @@ window.addEventListener('load', () => {
 
   content.appendChild(main);
 });
+// END OF STICKY WORK IMAGES
 
+// TITLE: https://css-tricks.com/snippets/css/typewriter-effect/
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -204,9 +209,9 @@ var TxtType = function(el, toRotate, period) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
     };
+// END OF TITLE
